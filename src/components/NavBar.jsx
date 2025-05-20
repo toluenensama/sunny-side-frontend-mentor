@@ -66,6 +66,7 @@ export function NavBar() {
                 onClick={() => {
                   setIsMenuOpen(false);
                 }}
+                className="text-gray-900"
               />
             ) : (
               <Menu
@@ -86,12 +87,12 @@ export function NavBar() {
                 : "opacity-0 pointer-events-none"
             )}
           >
-            <div className="flex flex-col space-y-8 text-xl">
+            <div className="flex flex-col space-y-8 text-xl ">
               {navItems.map((items, key) => (
                 <a
                   href={items.href}
                   key={key}
-                  className=" transition-colors duration-300 font-barlow"
+                  className=" transition-colors duration-300 font-barlow py-2 px-3 active:bg-yellow-500 rounded-full"
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}
